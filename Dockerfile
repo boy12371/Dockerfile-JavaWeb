@@ -30,7 +30,7 @@ ENV SVN_USERNAME javawebdocker@126.com
 ENV SVN_PASSWORD javawebdocker
 ENV SVN_WORKSPACE /workspace
 RUN svn co ${SVN_URL}/ ${SVN_WORKSPACE} --username=${SVN_USERNAME} --password=${SVN_PASSWORD} --non-interactive
-RUN ant ${SVN_WORKSPACE}
+RUN ant -f ${SVN_WORKSPACE}/build.xml
 
 #Start Tomcat
 ADD create_tomcat_admin_user.sh /create_tomcat_admin_user.sh
