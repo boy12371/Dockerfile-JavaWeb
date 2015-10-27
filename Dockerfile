@@ -1,6 +1,6 @@
 FROM ubuntu:trusty
 
-MAINTAINER zlong <zlong@cnksi.com>
+MAINTAINER zlong <jidebingfeng@126.com>
 
 ENV JAVA_VERSION 7u79
 RUN apt-get update && apt-get install -y openjdk-7-jdk && \
